@@ -1,0 +1,59 @@
+* {
+    background-color: #FFF9F2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background-color: #ffebc0;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.header button{
+    background-color: #D45060;
+    height: 60px;
+    width: 60px;
+    border-radius: 25px;
+    border: none;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
+.home,
+.heart,
+.footsteps,
+.sleep{
+    background-color: transparent;
+    color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.home-btn,
+.heart-btn,
+.footsteps-btn,
+.sleep-btn{
+    transition: transform 0.3s;
+}
+
+.home-btn:hover,
+.heart-btn:hover,
+.footsteps-btn:hover,
+.sleep-btn:hover{
+    transform: scale(1.2);
+}
+
+.home-btn:active,
+.heart-btn:active,
+.footsteps-btn:active,
+.sleep-btn:active{
+    transform: scale(0.8);
+}
