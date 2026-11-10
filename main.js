@@ -1,6 +1,10 @@
 const homeBtn = document.querySelector(".home-btn");
 const europeBtn = document.querySelector(".euro-btn");
 const flightBtn = document.querySelector(".flight-btn");
+<<<<<<< HEAD
+=======
+const flightBtn2 = document.querySelector(".plane-btn");
+>>>>>>> 86c511c (Initial commit)
 
 homeBtn.addEventListener("click", () => {
     window.location.href = "index.html";
@@ -12,4 +16,11 @@ europeBtn.addEventListener("click", () => {
 
 flightBtn.addEventListener("click", () => {
     window.location.href = "flight.html";
+<<<<<<< HEAD
+=======
+});
+
+flightBtn2.addEventListener("click", () => {
+    window.location.href = "flight.html";
+>>>>>>> 86c511c (Initial commit)
 });
