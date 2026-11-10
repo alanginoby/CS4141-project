@@ -139,4 +139,32 @@ const flights = [
         class: "Business",
         price: 799
     },
+    {
+        flightNumber: "EK785",
+        depICAO: "CDG",
+        arrICAO: "DUB",
+        departure: "Paris",
+        arrival: "Dublin",
+        dep_country: "France",
+        arrival_country: "Ireland",
+        departureTime: "07:55 AM",
+        arrivalTime: "03:50 PM",
+        flight_changes: "1 Change",
+        class: "Economy",
+        price: 129
+    },
+    {
+        flightNumber: "EK263",
+        depICAO: "HND",
+        arrICAO: "DUB",
+        departure: "Tokyo",
+        arrival: "Dublin",
+        dep_country: "Japan",
+        arrival_country: "Ireland",
+        departureTime: "05:30 AM",
+        arrivalTime: "11:50 PM",
+        flight_changes: "2 Change",
+        class: "Business",
+        price: 1249
+    },
 ];
