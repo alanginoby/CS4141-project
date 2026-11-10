@@ -23,15 +23,9 @@ body {
 }
 
 .header .home-btn {
-    background-color: #092328;
-    background-color: #12544F;
-}
-
-.header .home-btn {
     background-color: #12544F;
     border: solid 2px #ffd900;
 }
-
 .header button{
     background-color: #2A835F;
     height: 60px;
@@ -110,12 +104,12 @@ body {
     display: flex;
     width: 100%;
     min-height: 300px;
-    background-color: #12544F;
     background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
     margin-top: 250px;  
     box-sizing: border-box;
     gap: 30px;
 }
+
 .map button {
     background-color: #ffffff;
     color: #111111;
