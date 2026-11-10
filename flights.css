@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('HomePG-BG_Nero_AI_Image_Upscaler_Photo_Face.svg');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #12544F;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(140deg, #10af9a, #1c856e, #10534a);
+}
+
+.header .flight-btn {
+    background-color: #12544F;
+    border: solid 2px #ffd900;
+}
+
+.header button{
+    background-color: #2A835F;
+    height: 60px;
+    width: 160px;
+    border-radius: 40px;
+    border: none;
+    margin: 0 70px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.choose-btn {
+    display: none;
+}
+
+.euro-btn,
+.flight-btn,
+.about-btn,
+.home-btn{
+    transition: all 0.3s;
+}
+
+.euro-btn:hover,
+.flight-btn:hover,
+.about-btn:hover,
+.home-btn:hover{
+    transform: translateY(-5px);
+}
+
+.euro-btn:active,
+.flight-btn:active,  
+.about-btn:active,
+.home-btn:active{
+    transform: scale(0.8);
+    color: #092328;
+    background-color: #ffffff;
+    border: none;
+}
+
+.tickets-container{
+    width: 100%;
+    min-height: 400px auto;
+    padding: 10px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 20px;
+    grid-auto-rows: auto;
+}
+
+
+.flights {
+    width: 550px;
+    max-width: calc(100% - 40px);
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+    border: 1px solid #2A835F;
+    border-radius: 20px;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+.flights:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.flight-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4c7d75;
+}
+
+.flight-number {
+    font-size: 12px;
+    color: #a9d5c4;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.flight-top h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.flight-class {
+    background-color: #ffd900;
+    color: #092328;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.flight-route {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 35px 0;
+}
+
+.flight-location {
+    flex: 1;
+}
+
+.flight-location h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.flight-location h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.flight-location p {
+    font-size: 12px;
+    color: #b6d1c9;
+}
+
+.destination {
+    text-align: right;
+}
+
+.flight-path {
+    flex: 1;
+    text-align: center;
+    color: #ffd900;
+}
+
+.flight-path span {
+    font-size: 28px;
+}
+
+.flight-line {
+    height: 1px;
+    background-color: #88aaa2;
+    margin: 10px 0;
+}
+
+.flight-path p {
+    font-size: 11px;
+    color: #b6d1c9;
+}
+
+.flight-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #4c7d75;
+}
+
+.flight-price p {
+    color: #b6d1c9;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.flight-price h2 {
+    color: #ffd900;
+    font-size: 28px;
+}
+
+.book-btn {
+    background-color: #ffd900;
+    color: #092328;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.book-btn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 480px) {
+    .flights {
+        padding: 20px;
+    }
+
+    .flight-top h2 {
+        font-size: 18px;
+    }
+
+    .flight-location h1 {
+        font-size: 28px;
+    }
+
+    .flight-location h3 {
+        font-size: 13px;
+    }
+
+    .flight-class {
+        padding: 6px 10px;
+    }
+
+    .book-btn {
+        padding: 12px 16px;
+    }
+}
