@@ -15,11 +15,13 @@ body {
 
 .header{
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     height: 100px;
     width: 100%;
     background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+    top: 0;
 }
 
 .header .home-btn {
@@ -39,30 +41,30 @@ body {
     font-weight: 700;
 }
 
-.choose-btn {
+.menu-btn{
     display: none;
 }
 
 .euro-btn,
 .asia-btn,
-.africa-btn,
-.SAmerica-btn,
+.about-btn,
+.flight-btn,
 .home-btn{
     transition: all 0.3s;
 }
 
 .euro-btn:hover,
 .asia-btn:hover,
-.africa-btn:hover,
-.SAmerica-btn:hover,
+.about-btn:hover,
+.flight-btn:hover,
 .home-btn:hover{
     transform: translateY(-5px);
 }
 
 .euro-btn:active,
 .asia-btn:active,
-.africa-btn:active,
-.SAmerica-btn:active,
+.about-btn:active,
+.flight-btn:active,
 .home-btn:active{
     transform: scale(0.8);
     color: #092328;
@@ -214,21 +216,26 @@ body {
         text-align: center;
     }
 
+    .header{
+        display: absolute;
+        position: fixed;
+        z-index: 10;
+    }
+
     .euro-btn,
     .asia-btn,
-    .africa-btn,
-    .SAmerica-btn,
+    .about-btn,
+    .flight-btn,
     .home-btn{
         display: none;
     }
 
-    .header .choose-btn{
-        width: 250px;
+    .menu-btn{
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 10px;
-        transition: all 0.3s ease;
+        max-width: calc(100% - 50px);
+        margin: 0%;
     }
 
     .choose-btn:active{
