@@ -16,10 +16,12 @@ flightBtn.addEventListener("click", () => {
     window.location.href = "flight.html";
 });
 
-flightBtn2.addEventListener("click", () => {
-    window.location.href = "flight.html";
-});
-
 aboutBtn.addEventListener("click", () => {
     window.location.href = "about.html";
 });
+
+if (flightBtn2 != null) {
+    flightBtn2.addEventListener("click", () => {
+        window.location.href = "flight.html";
+    });
+}

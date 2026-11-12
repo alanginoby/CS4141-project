@@ -73,3 +73,114 @@ body {
     background-color: #ffffff;
     border: none;
 }
+
+.items{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 150px;
+    margin-left: 20px;
+    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+    width: calc(100% - 700px);
+    min-height: 200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: justify;
+    border: 1px solid #2A835F;
+}
+
+
+.about .heading{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.about .title{
+    font-size: 38px;
+    font-weight: 900;
+    color: #ffd900;
+    margin-top: 10px;
+}
+
+.about .phrase{
+    margin-top: 10px;
+    color: #d3d3d3;
+    line-height: 23px;
+    font-weight: 200;
+}
+
+.support {
+    margin: 150px 20px 0;
+    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+    width: calc(100% - 750px);
+    min-height: 215px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #2A835F;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.support-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+}
+
+.contact-info,
+.social-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    gap: 10px;
+    min-width: 0;
+}
+
+.contact-info {
+    flex: 0 1 55%;
+}
+
+.social-info {
+    flex: 1;
+    align-items: flex-start;
+}
+
+.support .line {
+    width: 1px;
+    background-color: #d2d2d2;
+    align-self: stretch;
+    flex-shrink: 0;
+}
+
+.support .heading{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.support .mail, .phone, .location, .insta, .tt{
+    margin-top: 10px;
+    font-size: 16px;
+    color: #d3d3d3;
+    overflow-wrap: anywhere;
+    font-weight: 200;
+}
+
+.support ion-icon{
+    color: #ffd900;
+    margin-right: 15px;
+    vertical-align: middle;
+}
