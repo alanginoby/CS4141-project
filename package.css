@@ -1,0 +1,70 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('HomePG-BG_Nero_AI_Image_Upscaler_Photo_Face.svg');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #12544F;
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+    top: 0;
+    z-index: 10;
+}
+
+.header button{
+    background-color: #2A835F;
+    height: 60px;
+    width: 160px;
+    border-radius: 40px;
+    border: none;
+    margin: 0 70px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.euro-btn,
+.asia-btn,
+.about-btn,
+.flight-btn,
+.home-btn{
+    transition: all 0.3s;
+}
+
+.euro-btn:hover,
+.asia-btn:hover,
+.about-btn:hover,
+.flight-btn:hover,
+.home-btn:hover{
+    transform: translateY(-5px);
+}
+
+.euro-btn:active,
+.asia-btn:active,
+.about-btn:active,
+.flight-btn:active,
+.home-btn:active{
+    transform: scale(0.8);
+    color: #092328;
+    background-color: #ffffff;
+    border: none;
+}
