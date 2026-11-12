@@ -2,6 +2,7 @@ const homeBtn = document.querySelector(".home-btn");
 const europeBtn = document.querySelector(".euro-btn");
 const flightBtn = document.querySelector(".flight-btn");
 const flightBtn2 = document.querySelector(".plane-btn");
+const aboutBtn = document.querySelector(".about-btn");
 
 homeBtn.addEventListener("click", () => {
     window.location.href = "index.html";
@@ -17,4 +18,8 @@ flightBtn.addEventListener("click", () => {
 
 flightBtn2.addEventListener("click", () => {
     window.location.href = "flight.html";
+});
+
+aboutBtn.addEventListener("click", () => {
+    window.location.href = "about.html";
 });
