@@ -4,6 +4,7 @@ const flightBtn = document.querySelector(".flight-btn");
 const flightBtn2 = document.querySelector(".plane-btn");
 const aboutBtn = document.querySelector(".about-btn");
 const packageBtn = document.querySelector(".case-btn");
+const hotelBtn = document.querySelector(".bed-btn");
 
 homeBtn.addEventListener("click", () => {
     window.location.href = "index.html";
@@ -32,3 +33,9 @@ if(packageBtn != null){
         window.location.href = "package.html";
     });
 }
+
+if(hotelBtn != null){
+    hotelBtn.addEventListener("click", () => {
+        window.location.href = "hotel.html";
+    });
+};
