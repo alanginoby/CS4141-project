@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -223,6 +224,93 @@ body {
 
 .book-btn:active {
     transform: scale(0.95);
+}
+
+.map {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+    margin-top: 250px;  
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.map button {
+    background-color: #ffffff;
+    color: #111111;
+    border: none;
+    border-radius: 15px;
+    width: 130px;
+    height: 170px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 65px;
+    transition: 0.3s ease;
+}
+
+.map {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Ubuntu';
+}
+
+.map button {
+    background: white;
+    color: #111;
+    border: none;
+    border-radius: 15px;
+    width: 140px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.map .planes{
+    color: #10af9a;
+}
+
+.map button ion-icon {
+    font-size: 38px;
+    color: #12544F;
+    background-color: transparent;
+}
+
+
+
+.desti, .planes, .case, .bed {
+    transform: translateY(-6px);
+    background: #D6EAE6;
+    font-weight: 600;
+}
+
+.map button:hover {
+    background-color: #D6EAE6;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.map button:active {
+    transform: scaleY(0.95);
+}
+
+.help {
+    color: white;
+    font-size: 30px;
+    width: 220px;
+    flex-shrink: 0;
 }
 
 @media (max-width: 480px) {
