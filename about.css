@@ -39,6 +39,7 @@ body {
     color: white;
     font-size: 14px;
     font-weight: 700;
+    corner-shape: squircle;
 }
 
 .choose-btn {

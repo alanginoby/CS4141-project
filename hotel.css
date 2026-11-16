@@ -26,6 +26,7 @@ body {
 }
 
 .header button{
+    background-color: #2A835F;
     height: 60px;
     width: 160px;
     border-radius: 40px;
@@ -35,9 +36,7 @@ body {
     color: white;
     font-size: 14px;
     font-weight: 700;
-    background-color: #12544F;
-    border: solid 2px #10af9a;
-    box-shadow: 2px 2px 10px #10af9a;
+    corner-shape: squircle;
 }
 
 .menu-btn{
