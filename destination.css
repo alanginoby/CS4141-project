@@ -11,9 +11,10 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #12544F;
+    color: white;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,47 +32,242 @@ body {
     box-shadow: 2px 2px 10px #10af9a;
 }
 
-.header button{
+.header button {
     background-color: #2A835F;
     height: 60px;
-    width: 160px;
+    width: 150px;
     border-radius: 40px;
     border: none;
-    margin: 0 70px;
+    margin: 0 25px;
     cursor: pointer;
     color: white;
     font-size: 14px;
     font-weight: 700;
-    corner-shape: squircle;
-}
-
-.choose-btn {
-    display: none;
-}
-
-.euro-btn,
-.asia-btn,
-.about-btn,
-.flight-btn,
-.home-btn{
     transition: all 0.3s;
 }
 
-.euro-btn:hover,
-.asia-btn:hover,
-.about-btn:hover,
-.flight-btn:hover,
-.home-btn:hover{
+.header button:hover {
     transform: translateY(-5px);
 }
 
-.euro-btn:active,
-.asia-btn:active,
-.about-btn:active,
-.flight-btn:active,
-.home-btn:active{
+.header button:active {
     transform: scale(0.8);
     color: #092328;
     background-color: #ffffff;
+}
+
+.menu-panel {
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 9;
+    width: 200px;
+    padding: 12px;
+    background-color: #12544F;
+    border: solid 2px #10af9a;
+    border-radius: 20px;
+}
+
+.menu-panel.open {
+    display: block;
+}
+
+.menu-panel a {
+    display: block;
+    padding: 14px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.menu-panel a:hover {
+    background-color: #2A835F;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.title {
+    font-family: "Marko One", serif;
+    font-size: 80px;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px 12px #092328;
+}
+
+.line {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px;
+}
+
+.filters button {
+    background-color: #2A835F;
+    height: 50px;
+    width: 150px;
+    border-radius: 40px;
     border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.continent,
+.compare,
+.media {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px 20px;
+}
+
+h2 {
+    font-family: "Marko One", serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.country {
+    background-color: #12544F;
+    border: solid 2px #10af9a;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: 2px 2px 14px #10af9a;
+}
+
+.country h3 {
+    font-family: "Marko One", serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.facts {
+    background-color: #10534a;
+    border-radius: 16px;
+    padding: 14px 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.places {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.place {
+    background-color: #10534a;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 18px;
+}
+
+.place img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 14px;
+}
+
+.place h4 {
+    font-family: "Marko One", serif;
+    font-size: 22px;
+    padding: 0 18px;
+    margin-bottom: 8px;
+}
+
+.place p {
+    padding: 0 18px;
+    line-height: 1.5;
+}
+
+.table-box {
+    overflow-x: auto;
+    border: solid 2px #10af9a;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    background-color: #12544F;
+}
+
+th {
+    background-color: #2A835F;
+    text-align: left;
+    padding: 14px;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #1c856e;
+}
+
+video,
+audio {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 28px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+}
+
+@media (max-width: 1100px) {
+    .header button {
+        width: 120px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 80px;
+    }
+
+    main {
+        padding-top: 80px;
+    }
+
+    .header .home-btn,
+    .header .euro-btn,
+    .header .flight-btn,
+    .header .about-btn {
+        display: none;
+    }
+
+    .menu-panel {
+        top: 80px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .places {
+        grid-template-columns: 1fr;
+    }
 }
