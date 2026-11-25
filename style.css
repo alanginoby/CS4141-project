@@ -1,271 +1,80 @@
-* {
-    font-family: "Ubuntu", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+header {
+    background-color:navy;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 25px;
 }
 
-body {
-    background-image: url('HomePG-BG_Nero_AI_Image_Upscaler_Photo_Face.svg');
-    background-size: 100% auto;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-color: #12544F;
+h1 {
+    color:white;
+    text-align:center;
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(53, 151, 249);
 }
 
-.header{
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    width: 100%;
-    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
-    top: 0;
-    z-index: 10;
+.navbar li {
+  position: relative; 
+  display: inline-block;
 }
 
-.header .home-btn {
-    background-color: #12544F;
-    border: solid 2px #10af9a;
-    box-shadow: 2px 2px 10px #10af9a;
-}
-.header button{
-    background-color: #2A835F;
-    height: 60px;
-    width: 160px;
-    border-radius: 40px;
-    border: none;
-    margin: 0 70px;
-    cursor: pointer;
-    color: white;
-    font-size: 14px;
-    font-weight: 700;
-    corner-shape: squircle;
+.navbar a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
-.menu-btn{
-    display: none;
+.navbar a:hover {
+  background-color: rgb(107, 176, 246); 
 }
 
-.euro-btn,
-.asia-btn,
-.about-btn,
-.flight-btn,
-.home-btn{
-    transition: all 0.3s;
+.dropdown-content li {
+  display: block;  
+  width: 100%;     
 }
 
-.euro-btn:hover,
-.asia-btn:hover,
-.about-btn:hover,
-.flight-btn:hover,
-.home-btn:hover{
-    transform: translateY(-5px);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(36, 157, 232, 0.927);
+  list-style-type: none;
+  padding: 0;
 }
 
-.euro-btn:active,
-.asia-btn:active,
-.about-btn:active,
-.flight-btn:active,
-.home-btn:active{
-    transform: scale(0.8);
-    color: #092328;
-    background-color: #ffffff;
-    border: none;
+.dropdown-content a {
+  color: #333333; 
 }
 
-.heading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    width: 100%;
-    margin-top: 150px;
+.dropdown-content {
+  background-color: #f9f9f9;
 }
 
-.title{
-    font-size: 120px;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.dropdown:hover .dropdown-content {
+  display: block;
 }
-
-.phrase{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    width: 100%;
-    margin-top: 5px;
+button {
+  background-color: #0a89bf;
+  color: white;
+  font-size: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
-.phrase p{
-    font-size: 34px;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+button hover {
+  background-color: #097eb1;
 }
-
-.map {
-    display: flex;
-    width: 100%;
-    min-height: 300px;
-    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
-    margin-top: 250px;  
-    box-sizing: border-box;
-    gap: 30px;
-}
-
-.map button {
-    background-color: #ffffff;
-    color: #111111;
-    border: none;
-    border-radius: 15px;
-    width: 130px;
-    height: 170px;
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 15px;
-    margin-top: 65px;
-    transition: 0.3s ease;
-}
-
-.map {
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
-}
-
-.map button {
-    background: white;
-    color: #111;
-    border: none;
-    border-radius: 15px;
-    width: 140px;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 15px;
-    transition: 0.3s ease;
-}
-
-.map button ion-icon {
-    font-size: 38px;
-    color: #12544F;
-    background-color: transparent;
-}
-
-.desti, .plane, .case, .bed {
-    transform: translateY(-6px);
-    background: #D6EAE6;
-}
-
-.map button:hover {
-    background-color: #D6EAE6;
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.map button:active {
-    transform: scaleY(0.95);
-}
-
-.samerica-btn{
-    background-color: transparent;
-    height: 60px;
-    width: 60px;
-    border-radius: 40px;
-    border: none;
-    margin: 0 70px;
-    cursor: pointer;
-    color: white;
-    font-size: 54px;
-    font-weight: 700;
-}
-
-.help {
-    color: white;
-    font-size: 30px;
-    width: 220px;
-    flex-shrink: 0;
-}
-
-@media (max-width: 768px) {
-
-    *{
-        overflow-x: hidden;
-    }
-
-    body {
-        background-size: auto 100vh;
-        background-position: top center;
-    }
-
-    .title{
-        font-size: 80px;
-        text-align: center;
-    }
-
-    .line{
-        margin-top: 20px;
-        font-size: 24px;
-        text-align: center;
-    }
-
-    .header{
-        display: absolute;
-        position: fixed;
-        z-index: 10;
-    }
-
-    .euro-btn,
-    .asia-btn,
-    .about-btn,
-    .flight-btn,
-    .home-btn{
-        display: none;
-    }
-
-    .menu-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: calc(100% - 50px);
-        margin: 0%;
-    }
-
-    .choose-btn:active{
-        background-color: white;
-         color: #092328;
-    }
-
-    .phrase{
-        height: 300px;
-    }
-
-    .loc{
-        font-size: 30px;
-        margin-right: 10px;
-    }
-
-    .map{
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-
-    .help{
-        font-size: 20px;
-        margin-top: 0px;
-    }
+footer {
+  background-color: #7db5fd;
+  padding: 10px;
+  text-align: center;
+  color: white;
 }

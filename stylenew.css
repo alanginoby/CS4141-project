@@ -1,0 +1,387 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('HomePG-BG_Nero_AI_Image_Upscaler_Photo_Face.svg');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #44f9ea;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(120deg, #10af9a, #1c856e, #10534a);
+    top: 0;
+    z-index: 10;
+}
+
+.header button{
+    background-color: #2A835F;
+    height: 60px;
+    width: 160px;
+    border-radius: 40px;
+    border: none;
+    margin: 0 70px;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.euro-btn,
+.asia-btn,
+.about-btn,
+.flight-btn,
+.home-btn{
+    transition: all 0.3s;
+}
+
+.euro-btn:hover,
+.asia-btn:hover,
+.about-btn:hover,
+.flight-btn:hover,
+.home-btn:hover{
+    transform: translateY(-5px);
+}
+
+.euro-btn:active,
+.asia-btn:active,
+.about-btn:active,
+.flight-btn:active,
+.home-btn:active{
+    transform: scale(0.8);
+    color: #092328;
+    background-color: #ffffff;
+    border: none;
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(34, 196, 182, 0.76);
+}
+
+.navbar li {
+  position: relative; 
+  display: inline-block;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: rgba(88, 207, 197, 0.76); 
+}
+.dropdown-content li {
+  display: block;  
+  width: 100%;     
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(88, 207, 197, 0.76);
+  list-style-type: none;
+  padding: 0;
+}
+
+.dropdown-content a {
+  color: #333333; 
+}
+
+.dropdown-content {
+  background-color: #f9f9f9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.photo-btn {
+  /* 1. Size & Display */
+  display: inline-block;
+  width: 550px;              /* Makes the button wide */
+  height: 360px;             /* Makes the button tall */
+  text-decoration: none;     /* Removes link underline */
+  border-radius: 12px;       /* Gives smooth rounded corners */
+  overflow: hidden;
+
+  /* 2. Photo Background Properties */
+  background-image: url(''); /* Path to your image file */
+  background-size: cover;             /* Scales image to cover the whole button */
+  background-position: center;        /* Centers the image */
+  background-repeat: no-repeat;
+
+  /* 3. Text Formatting & Alignment */
+  color: white;              /* Text color */
+  font-size: 24px;           /* Large text size */
+  font-weight: bold;
+  text-align: center;
+  line-height: 180px;        /* Vertically centers text to match button height */
+
+  /* 4. Shadow & Hover Animation */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.photo-btn:hover {
+  transform: scale(1.05);    /* Slightly enlarges the button on hover */
+}
+.spain-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+
+  background-image: url('Spain.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+
+.spain-btn:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Spain.png');  
+}
+
+.france-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+
+  background-image: url('France.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+
+.france-btn:hover {
+  transform: scale(1.05);  
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('France.png');
+}
+
+.japan-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+
+  background-image: url('Japan.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+
+.japan-btn:hover {
+  transform: scale(1.05); 
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Japan.png'); 
+}
+
+.uae-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+
+  background-image: url('UAE.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+.uae-btn:hover {
+  transform: scale(1.05); 
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('UAE.png'); 
+}
+
+.egypt-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+
+  background-image: url('Egypt.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+.egypt-btn:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Egypt.png');  
+}
+
+.southafrica-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+
+  background-image: url('SouthAfrica.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+.southafrica-btn:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('SouthAfrica.png'); 
+}
+
+.peru-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+  
+  background-image: url('Peru.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+.peru-btn:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Peru.png'); 
+}
+
+.brazil-btn {
+  display: inline-block;
+  width: 550px;              
+  height: 360px;             
+  text-decoration: none;     
+  border-radius: 10px;       
+  overflow: hidden;
+
+  background-image: url('Brazil.png'); 
+  background-size: cover;             
+  background-position: center;        
+  background-repeat: no-repeat;
+
+  color: white;             
+  font-size: 32px;          
+  font-weight: bold;
+  text-align: center;
+  line-height: 360px;       
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  margin-right: 20px;
+}
+.brazil-btn:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Brazil.png'); 
+}
+
+
+
