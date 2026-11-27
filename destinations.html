@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--lets the page show special characters such as the accent in "Família".-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--#makes the page fit phone screens instead of shrinking down a desktop layout. It's part of responsive design.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marko+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"><!-- loads the fonts from google (Marko One and Ubuntu) -->
+    <link rel="stylesheet" href="destination.css"> <!-- links my css file so the page has styles -->
+    <title>Destinations</title>
+</head>
+<body>
+    <div class="header">
+        <button class="home-btn">HOME</button>
+        <button class="euro-btn">DESTINATIONS</button>
+        <button class="flight-btn">FLIGHTS</button>
+        <button class="about-btn">ABOUT US</button>
+    </div>
+
+    
+
+    <nav class="menu-panel"> <!-- dropdown menu, hidden until you press MENU -->
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="flight.html">Flights</a>
+        <a href="about.html">About Us</a>
+    </nav>
+
+    <main>
+        <section class="hero"> <!-- big title and the line under it -->
+            <h1 class="title">DESTINATIONS</h1>
+            <p class="line">Four continents, eight countries. Pick a place and see what it offers.</p>
+        </section>
+                <section class="media"> <!-- the video and audio -->
+            <h2>Watch and listen</h2>
+            <video controls>
+                <source src="Video.mov" type="video/mp4">
+            </video>
+            <audio controls>
+                <source src="Audio.MOV" type="video/mp4">
+            </audio>
+        </section>
+
+        <section class="filters"> <!-- buttons that show one continent at a time -->
+            <button onclick="showContinent('all')">All</button>
+            <button onclick="showContinent('europe')">Europe</button>
+            <button onclick="showContinent('asia')">Asia</button>
+            <button onclick="showContinent('africa')">Africa</button>
+            <button onclick="showContinent('south-a+merica')">South America</button>
+        </section>
+
+        <section class="continent" id="europe"> <!-- europe section, the id is what the button finds -->
+            <h2>Europe</h2>
+
+            
+            <div class="country"> <!-- one box for spain with its facts and two places -->
+                <h3>Spain</h3>
+                <p class="facts">Capital: Madrid | Currency: Euro | Language: Spanish | Best time: April to October</p>
+                <div class="places">  <!-- the two place cards are side by side in here -->
+                    <div class="place">
+                        <img src="Spain1.png" alt="Spain photo 1">
+                        <h4>Barcelona (Sagrada Família)</h4>
+                        <p>A lively coastal city famous for Gaudi’s buildings, sandy beaches and tapas bars.</p>
+                    </div>
+                    <div class="place"> <!-- one place card with a picture, name and description -->
+                        <img src="Spain2.png" alt="Spain photo 2">
+                        <h4>Granada (the Alhambra)</h4>
+                        <p>A hilltop city in southern Spain, home to the Alhambra palace and its beautiful old streets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="country">
+                <h3>France</h3>
+                <p class="facts">Capital: Paris | Currency: Euro | Language: French | Best time: April to October</p>
+                <div class="places">
+                    <div class="place">
+                        <img src="France1.png" alt="France photo 1">
+                        <h4>Paris (Eiffel Tower)</h4>
+                        <p>The capital of France, known for the Eiffel Tower, the Louvre museum and its cafes.</p>
+                    </div>
+                    <div class="place">
+                        <img src="France2.png" alt="France photo 2">
+                        <h4>Nice, French Riviera </h4>
+                        <p>A sunny city on the French Riviera with pebble beaches, a seaside walk and a colourful old town.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="continent" id="asia">
+            <h2>Asia</h2>
+
+            <div class="country">
+                <h3>Japan</h3>
+                <p class="facts">Capital: Tokyo | Currency: Yen | Language: Japanese | Best time: March to May</p>
+                <div class="places">
+                    <div class="place">
+                        <img src="Japan1.png" alt="Japan photo 1">
+                        <h4>Tokyo  ( Senso-ji)</h4>
+                        <p>A huge, busy city where bright neon streets sit next to calm temples and gardens.</p>
+                    </div>
+                    <div class="place">
+                        <img src="Japan2.png" alt="Japan photo 2">
+                        <h4>Kyoto (Fushimi Inari)</h4>
+                        <p>Japan’s old capital, full of temples, shrines and traditional streets.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="country">
+                <h3>United Arab Emirates</h3>
+                <p class="facts">Capital: Abu Dhabi | Currency: Dirham | Language: Arabic | Best time: November to March</p>
+                <div class="places">
+                    <div class="place">
+                        <img src="UAE1.png" alt="UAE photo 1">
+                        <h4>Dubai (Burj Khalifa)</h4>
+                        <p>A modern city with record-breaking skyscrapers like the Burj Khalifa, huge malls and desert trips.</p>
+                    </div>
+                    <div class="place">
+                        <img src="UAE2.png" alt="UAE photo 2">
+                        <h4>Abu Dhabi (Sheikh Zayed Grand Mosque)</h4>
+                        <p>The capital of the UAE, home to the Sheikh Zayed Grand Mosque and its white marble domes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="continent" id="africa">
+            <h2>Africa</h2>
+
+            <div class="country">
+                <h3>Egypt</h3>
+                <p class="facts">Capital: Cairo | Currency: Egyptian pound | Language: Arabic | Best time: October to April</p>
+                <div class="places">
+                    <div class="place">
+                        <img src="Eygpt1.png" alt="Egypt photo 1">
+                        <h4>Giza (the Pyramids)</h4>
+                        <p>A big, busy city beside the Great Pyramids and the Sphinx, which are thousands of years old.</p>
+                    </div>
+                    <div class="place">
+                        <img src="Eygpt2.png" alt="Egypt photo 2">
+                        <h4>Luxor (Valley of the Kings, temples)</h4>
+                        <p>Often called the world’s greatest open-air museum, with giant temples and the Valley of the Kings.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="country">
+                <h3>South Africa</h3>
+                <p class="facts">Capital: Pretoria | Currency: Rand | Language: English and 11 others | Best time: September to November</p>
+                <div class="places">
+                    <div class="place">
+                        <img src="SouthAf1.png" alt="South Africa photo 1">
+                        <h4>Cape Town (Table Mountain)</h4>
+                        <p>A coastal city under Table Mountain, with beaches, vineyards and great views.</p>
+                    </div>
+                    <div class="place">
+                        <img src="SouthAf2.png" alt="South Africa photo 2">
+                        <h4>Kruger National Park (safari)</h4>
+                        <p>One of Africa’s best safari parks, where you can see lions, elephants and rhinos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="continent" id="south-america">
+            <h2>South America</h2>
+
+            <div class="country">
+                <h3>Peru</h3>
+                <p class="facts">Capital: Lima | Currency: Sol | Language: Spanish | Best time: May to September</p>
+                <div class="places">
+                    <div class="place">
+                        <img src="Peru1.png" alt="Peru photo 1">
+                        <h4>Machu Picchu</h4>
+                        <p>The old Inca capital and the ancient mountain city nearby, one of the most famous sights in the world.</p>
+                    </div>
+                    <div class="place">
+                        <img src="Peru2.png" alt="Peru photo 2">
+                        <h4>Lima (food, coastline)</h4>
+                        <p>Peru’s capital on the Pacific coast, well known for its food and ocean views.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="country">
+                <h3>Brazil</h3>
+                <p class="facts">Capital: Brasilia | Currency: Real | Language: Portuguese | Best time: May to October</p>
+                <div class="places">
+                    <div class="place">
+                        <img src="Brazil1.png" alt="Brazil photo 1">
+                        <h4>Rio de Janeiro</h4>
+                        <p>A beach city famous for Christ the Redeemer, Copacabana beach and its carnival.</p>
+                    </div>
+                    <div class="place">
+                        <img src="Brazil2.png" alt="Brazil photo 2">
+                        <h4>Iguazu Falls</h4>
+                        <p>A huge group of waterfalls surrounded by rainforest on the border with Argentina.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="compare"> <!-- table that compares all the countries -->
+            <h2>Compare at a glance</h2>
+            <div class="table-box">
+                <table>
+                    <tr><th>Country</th><th>Capital</th><th>Currency</th><th>Best time</th></tr>
+                    <tr><td>Spain</td><td>Madrid</td><td>Euro</td><td>Apr to Oct</td></tr>
+                    <tr><td>France</td><td>Paris</td><td>Euro</td><td>Apr to Oct</td></tr>
+                    <tr><td>Japan</td><td>Tokyo</td><td>Yen</td><td>Mar to May</td></tr>
+                    <tr><td>UAE</td><td>Abu Dhabi</td><td>Dirham</td><td>Nov to Mar</td></tr>
+                    <tr><td>Egypt</td><td>Cairo</td><td>Egyptian pound</td><td>Oct to Apr</td></tr>
+                    <tr><td>South Africa</td><td>Pretoria</td><td>Rand</td><td>Sep to Nov</td></tr>
+                    <tr><td>Peru</td><td>Lima</td><td>Sol</td><td>May to Sep</td></tr>
+                    <tr><td>Brazil</td><td>Brasilia</td><td>Real</td><td>May to Oct</td></tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script> <!-- loads the icon library, copied from the home page -->
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script> <!-- makes the top buttons change page -->
+    <script src="destinations.js"></script> <!-- makes the filter buttons and menu work -->
+</body>
+</html>
